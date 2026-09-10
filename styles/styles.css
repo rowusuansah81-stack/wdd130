@@ -19,18 +19,15 @@ aside {
 }
 
 h1 {
+    color: #ffffff;
     background-color: #3b1acc;
-}
-
-nav {
-    color: #000000;
-    background-color: #3b1acc;
-    padding: 0px;
-    display: block;
 }
 
 nav a {
-    color: #000000;
+    color: #ffffff;
+    background-color: #3b1acc;
+    padding: 0px;
+    display: block;
 }
 
 aside img {
