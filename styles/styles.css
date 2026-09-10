@@ -18,6 +18,21 @@ aside {
     text-align: center;
 }
 
+h1 {
+    background-color: #3b1acc;
+}
+
+nav {
+    color: #000000;
+    background-color: #3b1acc;
+    padding: 0px;
+    display: block;
+}
+
+nav a {
+    color: #000000;
+}
+
 aside img {
     width: 200px;
     height: auto;
