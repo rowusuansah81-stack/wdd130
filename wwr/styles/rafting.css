@@ -11,14 +11,6 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--primary-color);
-    display: grid;
-    grid-template-columns: 200px 1fr0;
-    align-items: center;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +26,17 @@ header,
 main,
 footer {
     width: 840px;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: block;
+    align-items: center;
+    padding: 1rem;
 }
 
 h1,
@@ -92,11 +94,11 @@ article {
     left: 2rem;
     bottom: 1rem;
     width: 88%;
-    background: rgba(212, 160, 23, 0.9);
+    background-color: color-mix(in srgb, var(--accent2-color) 90%, transparent);
     color: #000;
     padding: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .35);
-    height: 25%
+    height: 25%;
 }
 
 .hero h1 {
@@ -108,7 +110,6 @@ article {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
 }
 
 figure img {
@@ -140,21 +141,11 @@ figure img {
     grid-column: 1 / -1;
 }
 
-header,
-main,
-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-header {
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: var(--primary-color);
-    color: white;
+.adventures figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+    padding-bottom: 2px;
 }
 
 .grid {
@@ -202,10 +193,15 @@ main div img {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: var(--accent1-color);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
 }
 
 footer nav a img {
@@ -221,8 +217,9 @@ section {
 }
 
 section h2 {
-    background-color: rgb(45, 141, 101);
+    background-color: var(--secondary-color);
     text-align: center;
+    color: var(--accent1-color);
 }
 
 footer {
