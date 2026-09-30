@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quiz Form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+
+<body>
+    <main class="box">
+        <h1>Basic HTML and CSS Quiz</h1>
+        <form class="box">
+            <div class="quiz-item box">
+                <label for="q1">1. Which planet is known as the Red Planet?</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+            <div class="quiz-item box">
+                <label for="q2">2. What is the capital of Australia?</label>
+                <textarea type="text" id="q2" name="q2"></textarea>
+            </div>
+            <div class="quiz-item box">
+                <label for="q3">3. Who wrote "Romeo and Juliet"?</label>
+                <select id="q3" name="q3">
+                    <option value="selected disabled">Choose One</option>
+                    <option value="a">A. &lt;!-- This is a comment --&lt;</option>
+                    <option value="b">B. /* This is a comment *</option>
+                    <option value="c">C. // This is a comment</option>
+                </select>
+            </div>
+            <div class="quiz-item box">
+                <label for="q4">4. How many continents are there?</label>
+                <code class="box">Continent: 4 5 7;</code>
+                <input type="number" id="q4" name="q4">
+            </div>
+            <button type="Submit">Submit Quiz for Grading</button>
+
+        </form>
+
+    </main>
+</body>
+
+</html>
