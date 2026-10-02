@@ -71,31 +71,25 @@
                     <fieldset>
                         <legend>Purpose of Message:</legend>
 
-                        <label>
-                            <input type="radio" name="purpose" value="general" checked>
-                            General Inquiry
-                        </label>
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          checked>
+                        <label for="purpose-general">General Inquiry</label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
-                            Reservation Question
-                        </label>
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
+                        <label for="purpose-reservation">Reservation Question</label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
-                            Website Suggestion
-                        </label>
+                        <input type="radio" id="purpose-suggestion" name="purpose"
+                          value="suggestion">
+                        <label for="purpose-suggestion">Website Suggestion</label>
                     </fieldset>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter" value="yes">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-
-                    <button type="submit">Send Your Message</button>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    <button type="submit">Send My Message</button>
                 </form>
             </div>
         </section>
