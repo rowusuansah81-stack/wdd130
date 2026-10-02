@@ -233,14 +233,12 @@ footer {
    CONTACT PAGE
    ================================================ */
 
-/* Intro paragraph under the page title */
 .contact-intro {
     text-align: center;
     max-width: 640px;
     margin: 0 auto 1.5rem;
 }
 
-/* Two-column layout: company info | form */
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -248,7 +246,6 @@ footer {
     align-items: start;
 }
 
-/* Company info panel */
 .company-info h2,
 .contact-form h2 {
     background-color: var(--secondary-color);
@@ -267,7 +264,6 @@ footer {
     color: var(--accent1-color);
 }
 
-/* Map iframe */
 .company-info iframe {
     width: 100%;
     height: 220px;
@@ -276,7 +272,6 @@ footer {
     margin-top: 0.75rem;
 }
 
-/* ---- Contact form ---- */
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -310,7 +305,6 @@ footer {
     padding: 0 0.5rem;
 }
 
-/* Radio + checkbox options inline */
 .contact-form fieldset label,
 .checkbox-label {
     font-weight: normal;
@@ -320,7 +314,6 @@ footer {
     margin: 0.35rem 0;
 }
 
-/* Submit button — clear, high contrast */
 .contact-form button[type="submit"] {
     background-color: var(--accent1-color);
     color: #fff;
@@ -338,7 +331,6 @@ footer {
     color: var(--accent1-color);
 }
 
-/* ---- Employee profiles ---- */
 .employees {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -365,7 +357,6 @@ footer {
     font-weight: bold;
 }
 
-/* ---- Responsive fallback ---- */
 @media (max-width: 720px) {
 
     .contact-section,
