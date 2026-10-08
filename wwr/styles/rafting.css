@@ -36,7 +36,6 @@ footer {
 
 header {
     background-color: var(--primary-color);
-    color: white;
     display: block;
     align-items: center;
     padding: 1rem;
